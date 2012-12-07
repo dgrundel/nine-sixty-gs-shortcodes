@@ -18,8 +18,9 @@
             $width = (array_key_exists('width', $atts)) ? $atts['width'] : 12;
             $alpha = (in_array('alpha', $atts)) ? 'alpha' : '';
             $omega = (in_array('omega', $atts)) ? 'omega' : '';
+            $style = (array_key_exists('style', $atts)) ? 'style="'.$atts['style'].'"' : '';
             
-            return '<div class="grid_'."{$width} {$alpha} {$omega}".'">'.do_shortcode($content).'</div>';
+            return '<div class="grid_'."{$width} {$alpha} {$omega}".'" '.$style.'>'.do_shortcode($content).'</div>';
         }
         
         
