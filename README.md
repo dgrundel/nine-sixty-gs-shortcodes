@@ -1,7 +1,7 @@
 nine-sixty-gs-shortcodes
 ========================
 
-Adds [grid] and [clear] shortcodes for content editing convenience.
+Adds [grid] and [clear] shortcodes for content editing convenience when using the 960.gs CSS framework.
 
 [grid] supports three attributes: "width", "alpha", and "omega". [grid] is best used with a closing [/grid] shortcode.
 
