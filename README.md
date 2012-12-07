@@ -5,7 +5,7 @@ Adds [grid] and [clear] shortcodes for content editing convenience when using th
 
 **[grid]**
 
-[grid] supports four attributes: "width", "alpha", "omega", and "style".
+[grid] supports five attributes: "width", "alpha", "omega", "class", and "style".
 [grid] is best used with a closing [/grid] shortcode.
 
 You can use [grid] like this:
@@ -26,6 +26,12 @@ You can nest [grid], also. Be sure to use "alpha" and "omega", as you usually wo
 [/grid]
 [grid width="4"] This is column two. [/grid]
 [grid width="4"] This is column three. [/grid]
+```
+
+If you need to add your own CSS classes to the div that [grid] generates, use the "class" attribute. Separate multiple classes with a space, just like you would if you were handwriting the HTML yourself.
+
+```
+[grid width="12" class="my-awesome-css-class another-sweet-class"]
 ```
 
 [grid]'s "style" attribute can be used to add inline styles to the div it generates, like this:
